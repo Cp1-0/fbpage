@@ -16,19 +16,33 @@
       background-color: #f0f2f5;
     }
 
+    .cover-photo {
+      width: 100%;
+      height: 180px;
+      background-image: url('cover.jpg'); /* Replace with your cover image path */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
     .header {
       background: white;
       padding: 10px;
       display: flex;
       align-items: center;
       gap: 10px;
+      position: relative;
+      top: -40px;
+      margin-bottom: -30px;
       border-bottom: 1px solid #ccc;
     }
 
     .logo {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
+      border: 3px solid white;
+      background-color: #fff;
     }
 
     .page-info {
@@ -66,10 +80,7 @@
       color: white;
     }
 
-    .signup-btn {
-      background-color: #e4e6eb;
-    }
-
+    .signup-btn,
     .dots-btn {
       background-color: #e4e6eb;
     }
@@ -125,9 +136,12 @@
 </head>
 <body>
 
-  <!-- Top Header -->
+  <!-- Cover photo (background image) -->
+  <div class="cover-photo"></div>
+
+  <!-- Header with logo and info -->
   <div class="header">
-    <img src="https://i.ibb.co/LWmBWc4/Untitled.jpg" alt="CashX Logo" class="logo" />
+    <img src="logo.png" alt="CashX Logo" class="logo" />
     <div class="page-info">
       <div class="page-name">CashX Sri Lanka</div>
       <div class="followers">29K likes · 45K followers</div>
@@ -149,7 +163,7 @@
     <div>More</div>
   </div>
 
-  <!-- Details Section -->
+  <!-- Details -->
   <div class="details-section">
     <h4>Details</h4>
     Page · Loan service
