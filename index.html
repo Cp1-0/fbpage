@@ -16,30 +16,49 @@
       background-color: #f0f2f5;
     }
 
-    .page-header {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: relative;
-    }
-
-    .cover {
+    .cover-container {
       background: linear-gradient(to right, #f3f3f3, #fff);
-      padding: 20px;
+      padding: 15px;
       position: relative;
+      text-align: center;
     }
 
-    .cover img {
-      width: 100px;
-      height: 100px;
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .logo-row img {
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
-      border: 3px solid white;
-      background-color: #fff;
+      border: 3px solid #fff;
     }
 
-    .phone {
-      width: 120px;
+    .page-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .page-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #050505;
+    }
+
+    .page-stats {
+      font-size: 13px;
+      color: #606770;
+    }
+
+    .phone-preview {
+      width: 100%;
+      max-width: 250px;
       margin: 10px auto;
       display: block;
     }
@@ -50,10 +69,10 @@
       border: 2px solid #004aad;
       color: #004aad;
       font-weight: bold;
-      padding: 6px 12px;
-      border-radius: 30px;
+      padding: 5px 12px;
+      border-radius: 25px;
       font-size: 13px;
-      margin-top: 5px;
+      margin-top: 8px;
     }
 
     .loan-tag::before {
@@ -61,16 +80,11 @@
       color: green;
     }
 
-    .page-name {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
     .tagline {
-      font-size: 13px;
+      font-size: 14px;
       color: #606770;
-      margin-bottom: 10px;
+      margin: 10px 0;
+      text-align: center;
     }
 
     .actions {
@@ -130,25 +144,28 @@
 </head>
 <body>
 
-  <div class="page-header">
-    <div class="cover">
+  <div class="cover-container">
+    <div class="logo-row">
       <img src="logo.png" alt="CashX Logo" />
-      <img src="phone-preview.png" alt="Phone Preview" class="phone" />
-      <div class="loan-tag">Online loan in Sri Lanka</div>
+      <div class="page-info">
+        <div class="page-name">CashX Sri Lanka</div>
+        <div class="page-stats">29K likes · 45K followers</div>
+      </div>
     </div>
 
-    <div class="page-name">CashX Sri Lanka</div>
-    <div class="tagline">Your best friend for a reliable solution</div>
+    <img src="phone-preview.png" alt="Phone Preview" class="phone-preview" />
+    <div class="loan-tag">Online loan in Sri Lanka</div>
+  </div>
 
-    <div class="actions">
-      <button class="like-btn">👍 Like</button>
-      <button class="signup-btn">✍ Sign Up</button>
-    </div>
+  <div class="tagline">Your best friend for a reliable solution</div>
 
-    <div class="page-details">
-      Page · Loan service <br />
-      29K likes · 45K followers
-    </div>
+  <div class="actions">
+    <button class="like-btn">👍 Like</button>
+    <button class="signup-btn">✍ Sign Up</button>
+  </div>
+
+  <div class="page-details">
+    Page · Loan service
   </div>
 
   <div class="featured">
