@@ -16,89 +16,48 @@
       background-color: #f0f2f5;
     }
 
-    .cover-container {
-      background: linear-gradient(to right, #f3f3f3, #fff);
-      padding: 15px;
-      position: relative;
-      text-align: center;
-    }
-
-    .logo-row {
+    .header {
+      background: white;
+      padding: 10px;
       display: flex;
       align-items: center;
-      justify-content: start;
       gap: 10px;
-      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
     }
 
-    .logo-row img {
-      width: 70px;
-      height: 70px;
+    .logo {
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      border: 3px solid #fff;
     }
 
     .page-info {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
+      flex-grow: 1;
     }
 
     .page-name {
       font-size: 18px;
       font-weight: bold;
-      color: #050505;
     }
 
-    .page-stats {
+    .followers {
       font-size: 13px;
-      color: #606770;
-    }
-
-    .phone-preview {
-      width: 100%;
-      max-width: 250px;
-      margin: 10px auto;
-      display: block;
-    }
-
-    .loan-tag {
-      display: inline-block;
-      background-color: #ffffff;
-      border: 2px solid #004aad;
-      color: #004aad;
-      font-weight: bold;
-      padding: 5px 12px;
-      border-radius: 25px;
-      font-size: 13px;
-      margin-top: 8px;
-    }
-
-    .loan-tag::before {
-      content: "✔ ";
-      color: green;
-    }
-
-    .tagline {
-      font-size: 14px;
-      color: #606770;
-      margin: 10px 0;
-      text-align: center;
+      color: #555;
     }
 
     .actions {
+      background: white;
       display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin: 10px 0;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
     }
 
     .actions button {
-      padding: 10px 20px;
-      font-size: 14px;
-      border-radius: 6px;
+      padding: 8px 14px;
       border: none;
+      border-radius: 5px;
+      font-size: 14px;
       cursor: pointer;
     }
 
@@ -109,24 +68,46 @@
 
     .signup-btn {
       background-color: #e4e6eb;
-      color: black;
     }
 
-    .page-details {
-      font-size: 13px;
-      color: #606770;
-      text-align: center;
-      margin: 5px 0;
+    .dots-btn {
+      background-color: #e4e6eb;
+    }
+
+    .tabs {
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .tabs div {
+      cursor: pointer;
+      color: #1c1e21;
+    }
+
+    .details-section {
+      background: white;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .details-section h4 {
+      font-size: 15px;
+      margin-bottom: 5px;
     }
 
     .featured {
       background-color: white;
-      margin: 15px;
+      margin-top: 10px;
       padding: 10px;
-      border-radius: 6px;
+      border-top: 1px solid #ddd;
       font-size: 14px;
-      color: #050505;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     }
 
     .featured span {
@@ -144,30 +125,37 @@
 </head>
 <body>
 
-  <div class="cover-container">
-    <div class="logo-row">
-      <img src="logo.png" alt="CashX Logo" />
-      <div class="page-info">
-        <div class="page-name">CashX Sri Lanka</div>
-        <div class="page-stats">29K likes · 45K followers</div>
-      </div>
+  <!-- Top Header -->
+  <div class="header">
+    <img src="logo.png" alt="CashX Logo" class="logo" />
+    <div class="page-info">
+      <div class="page-name">CashX Sri Lanka</div>
+      <div class="followers">29K likes · 45K followers</div>
     </div>
-
-    <img src="phone-preview.png" alt="Phone Preview" class="phone-preview" />
-    <div class="loan-tag">Online loan in Sri Lanka</div>
   </div>
 
-  <div class="tagline">Your best friend for a reliable solution</div>
-
+  <!-- Buttons -->
   <div class="actions">
     <button class="like-btn">👍 Like</button>
     <button class="signup-btn">✍ Sign Up</button>
+    <button class="dots-btn">⋯</button>
   </div>
 
-  <div class="page-details">
+  <!-- Tabs -->
+  <div class="tabs">
+    <div>Posts</div>
+    <div>About</div>
+    <div>Photos</div>
+    <div>More</div>
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section">
+    <h4>Details</h4>
     Page · Loan service
   </div>
 
+  <!-- Featured Info -->
   <div class="featured">
     📍 <strong>CashX Sri Lanka is in Sri Lanka.</strong><br />
     <span>23 Sep 2024</span>
